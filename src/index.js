@@ -20,4 +20,9 @@ const brunchPrices = [15.0, 16.0, 18.0, 12.0];
 
 // Map - "Transforms" each item in the array and returns a new array
 
+const uppercaseMenu = brunchMenu.map ((menuItem)=> menuItem.toUpperCase());
+console.log(uppercaseMenu);
+
 // Filter - Returns a new array with items that pass the condition in the callback
+const cheaperMenuPrices = brunchPrices.filter((price)=>price < 17);
+console.log(cheaperMenuPrices);
